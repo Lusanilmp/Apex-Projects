@@ -14,7 +14,7 @@
 .navbar{
     position: fixed;
     width: 100%;
-    background: crimson;
+    background:crimson;
     z-index: 999;
     padding: 30px 0;
     font-family: 'ubuntu', sans-serif;
@@ -171,7 +171,7 @@ section{
     font-family: 'Ubuntu' ,sans-serif;
 }
 .about .title::before{
-    content: "";
+ 
     position: absolute;
     bottom: 0px;
     left: 50%;
@@ -237,14 +237,16 @@ section{
 }
 
 /* services section styling */
-.services{
+.services, .teams{
    color: #fff;
    background: #111;
 }
-.services .title::before{
+.services .title::before,
+.teams .title::before{
   background: #fff;
 }
-.services .title::after{
+.services .title::after,
+.teams .title::after{
     background: #111;
     content: "what i provide";
 }
@@ -342,6 +344,8 @@ section{
 }
 .skills .skills-content .right .html::before{
     width: 90%;
+    border: 2px;
+    text-align: right;
 
 }
 .skills .skills-content .right .css::before{
@@ -357,8 +361,25 @@ section{
     width: 70%;
 }
 
+/*teams section styling*/
+.teams .title::after{
+    content: "who with me";
+}
+.teams .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
 
 
+}
+.teams .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+
+}
 
 /* responsive media query star */
 @media (max-width: 1300px ){
