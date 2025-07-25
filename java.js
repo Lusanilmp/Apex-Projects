@@ -19,7 +19,7 @@ $(document).ready(function(){
         margin: 20,
         loop:true,
         autoPlayTimeOut: 2000,
-        aututoplayHoverPause:true,
+        autoplayHoverPause:true,
         responsive: {
             0:{
                 items: 1,
