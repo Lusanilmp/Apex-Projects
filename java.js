@@ -13,3 +13,29 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     });
 });   
+
+    // owl carousel script
+    $('.carousel').owlCarousel({
+        margin: 20,
+        loop:true,
+        autoPlayTimeOut: 2000,
+        aututoplayHoverPause:true,
+        responsive: {
+            0:{
+                items: 1,
+                nav: false
+            },
+            600:{
+                items: 2,
+                nav:false
+            },
+            1000:{
+                items: 3,
+                nav:false
+            }
+        }
+
+    });
+    
+    
+    
