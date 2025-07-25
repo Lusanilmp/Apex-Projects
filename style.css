@@ -203,7 +203,7 @@ section{
     height: 400px;
     width: 400px;
     object-fit: cover;
-    border-radius: 6px;
+    font-weight: 500;
 }
 .about .about-content .right{
     width: 55%;
@@ -237,14 +237,16 @@ section{
 }
 
 /* services section styling */
-.services{
+ .services .teams{
    color: #fff;
    background: #111;
 }
-.services .title::before{
+.services .title::before,
+.teams .title::before{
   background: #fff;
 }
-.services .title::after{
+
+.about .about-content .right a{
     background: #111;
     content: "what i provide";
 }
