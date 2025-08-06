@@ -119,7 +119,7 @@ section{
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
-.contact .conntact-content{
+.contact .contact-content{
 
     display: flex;
     flex-wrap: wrap;
@@ -362,7 +362,6 @@ section{
 .skills .skills-content .right .mysql::before{
     width: 70%;
 }
-
 /*teams section styling*/
 .teams .title::after{
     content: "who with me";
@@ -376,7 +375,6 @@ section{
 }
 .teams .carousel .card:hover{
     background: crimson;
-
 }
 .teams .carousel .card .box{
     display: flex;
@@ -384,11 +382,9 @@ section{
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-
 }
 .teams .carousel .card:hover .box{
     transform: scale(1.05);
-
 }
 .teams .carousel .card .text{
     font-size: 25px;
@@ -407,11 +403,11 @@ section{
 .teams .carousel .card:hover img{
     border-color: #fff;
 }
-.owl-dots{
+.owl-dot{
         text-align: center;
         margin-top: 20px;
 }
-.owl-dots{
+.owl-dot{
     height: 13px;
     width: 13px;
     margin: 0 5px;
@@ -420,13 +416,13 @@ section{
     border: 2px solid crimson!important;
     transition: all 0.3s ease;
 }
-.owl-dots.active{
+.owl-dot.active{
     width: 35px;
     border-radius: 14px;
 
 }
-.owl-dots.active,
-.owl-dots:hover{
+.owl-dot.active,
+.owl-dot:hover{
     background: crimson!important;
 }
 /* contact section styling */
@@ -436,8 +432,58 @@ section{
 .contact .conntact-content .column{
     width:calc(50% - 30px);
 }
+.contact .conntact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
 
 
+
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .conntact-content .left .icons{
+    margin:10px 0;
+}
+.contact .conntact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .conntact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact .contact-content .info  .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+      color: #333;
+}
+.contact .contact-content .info  .head .sub-title{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+}
+.contact .right form .field
+.contact .right form .field .input{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'poppins', sans-serif;
+
+}
 
 
 
