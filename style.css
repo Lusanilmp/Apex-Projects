@@ -15,9 +15,10 @@ html{
 }
 /* navbar styling */
 .navbar{
-    position: fixed;
+    position: sticky;
     width: 100%;
     z-index: 999;
+    background: crimson;
     padding: 30px 0;
     font-family: 'ubuntu', sans-serif;
     transition: all 0.3s ease;
@@ -68,56 +69,73 @@ html{
     cursor: pointer;
     display: none;
 }
-.scroll-up-btn{
-    position: fixed;
-    height: 45px;
-    width: 42px;
+.scroll-up-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  height: 45px;
+  width: 42px;
+  background: crimson;
+  color: white;
+  text-align: center;
+  line-height: 45px;
+  font-size: 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+.scroll-up-btn.show {
+  opacity: 1;
+  pointer-events: auto;
+  bottom: 50px; /* small move up when visible */
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
     background: crimson;
-    right: 30px;
-    bottom: 10px;
-    text-align: center;
-    line-height: 45px;
-    color: #fff;
-    z-index: 9999;
-    font-size: 30px;
-    border-radius: 6px;
-    border-bottom-width: 2px;
-    cursor: pointer;
-    opacity: 0;
-    pointer-events: none;
+    padding: 30px 0;
     transition: all 0.3s ease;
 }
-.scroll-up-btn.show{
-    bottom: 30px;
-    opacity: 1;
-    pointer-events: auto;
+.navbar.sticky {
+    padding: 15px 0;
+    background: crimson;
 }
+
+
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/IMG_3345.JPG") no-repeat center;
+    background: url("images/IMG_3345.JPG") no-repeat right;
     height: 100vh;
     color: #fff;
     min-height: 500px;
     font-family: 'ubuntu', sans-serif;
-    background-color: #111;
+    border-radius: 3px;
+    background-color: #E9E0D7;
+   
 }
 .home .max-width{
     margin: auto 0 auto 40px;
 }
-.home .home-content .text-1{
+.home .home-content .h1{
     font-size: 27px;
 }
-.home .home-content .text-2{
+.home .home-content .h2{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
 }
-.home .home-content .text-3{
+.home .home-content .h3{
     font-size: 40px;
     margin: 5px 0;
 }
-.home .home-content .text-3 span{
+.home .home-content .h3{
     color: crimson;
     font-weight: 500;
 }
@@ -191,8 +209,8 @@ section .title::after{
 .about .about-content .left img{
     height: 400px;
     width: 400px;
-    object-fit: cover;
-    border-radius: 6px;
+    object-fit: contain;
+    border-radius:  7px;
 }
 .about .about-content .right{
     width: 55%;
@@ -292,6 +310,7 @@ section .title::after{
     background: crimson;
     color:#fff;
     font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
@@ -345,6 +364,7 @@ section .title::after{
 .skills .skills-content .right .mysql::before{
     width: 70%;
 }
+
 /*teams section styling*/
 .teams .title::after{
     content: "who with me";

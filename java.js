@@ -17,14 +17,14 @@ $(document).ready(function(){
 
     // slide-up script
     $('.scroll-up-btn').click(function(){
-        $('html').animate({scrollTop: 0});
+        $('html, body').animate({scrollTop: 0}, 600);
         // removing smooth scroll on slide-up button click
-        $('html').css("scrollBehavior", "auto");
+        $('html, body').css("scrollBehavior", "auto");
     });
 
     $('.navbar .menu li a').click(function(){
         // applying again smooth scroll on menu items click
-        $('html').css("scrollBehavior", "smooth");
+        $('html, body').css("scrollBehavior", "smooth");
     });
 
     // toggle menu/navbar script
@@ -34,14 +34,14 @@ $(document).ready(function(){
     });
 
     // typing text animation script
-    var typed = new Typed("typing", {
+    var typed = new Typed(".typing", {
         strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
-    var typed = new Typed("typing-2", {
+    var typed2 = new Typed(".typing-2", {
         strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
         typeSpeed: 100,
         backSpeed: 60,
@@ -52,7 +52,7 @@ $(document).ready(function(){
     $('.carousel').owlCarousel({
         margin: 20,
         loop: true,
-        autoplayTimeOut: 2000,
+        autoplayTimeout: 2000,
         autoplayHoverPause: true,
         responsive: {
             0:{
