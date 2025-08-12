@@ -209,13 +209,13 @@ section .title::after{
 .about .about-content .left img{
     height: 400px;
     width: 400px;
-<<<<<<< HEAD
+
     object-fit: cover;
     font-weight: 500;
-=======
+
     object-fit: contain;
     border-radius:  7px;
->>>>>>> 9d40228ae4fd874e1b23817b66b793b1f7676b2c
+
 }
 .about .about-content .right{
     width: 55%;
