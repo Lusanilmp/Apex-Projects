@@ -131,13 +131,12 @@ html{
     font-weight: 600;
     margin-left: -3px;
 }
-.home .home-content .h3{
-    font-size: 40px;
-    margin: 5px 0;
-}
+
+
 .home .home-content .h3{
     color: crimson;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 40px;
 }
 .home .home-content a{
     display: inline-block;
@@ -675,4 +674,12 @@ footer span a:hover{
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
+.home .home-content .h3 .typing {
+    color: crimson;
+    font-weight: 500;
+}
 
+.about .about-content .right .text .typing-2 {
+    color: crimson;
+    font-weight: 600;
+}
