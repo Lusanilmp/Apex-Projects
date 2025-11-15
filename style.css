@@ -76,7 +76,7 @@ html{
   height: 45px;
   width: 42px;
   background: crimson;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
   line-height: 45px;
   font-size: 30px;
@@ -131,13 +131,12 @@ html{
     font-weight: 600;
     margin-left: -3px;
 }
-.home .home-content .h3{
-    font-size: 40px;
-    margin: 5px 0;
-}
+
+
 .home .home-content .h3{
     color: crimson;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 40px;
 }
 .home .home-content a{
     display: inline-block;
@@ -425,27 +424,35 @@ section .title::after{
 .teams .carousel .card:hover img{
     border-color: #fff;
 }
-.owl-dots{
+/* --- Corrected Owl Carousel Dot Styling --- */
+
+/* This styles the container for the dots */
+.owl-dots {
     text-align: center;
     margin-top: 20px;
 }
-.owl-dots{
+
+/* This styles EACH individual dot */
+.owl-carousel .owl-dot {
     height: 13px;
     width: 13px;
     margin: 0 5px;
-    outline: none!important;
+    outline: none;
     border-radius: 50%;
-    border: 2px solid crimson!important;
+    border: 2px solid crimson;
     transition: all 0.3s ease;
 }
-.owl-dots.active{
+
+/* This styles the ACTIVE dot and the dot on HOVER */
+.owl-carousel .owl-dot.active,
+.owl-carousel .owl-dot:hover {
+    background: crimson;
+}
+
+/* This creates the "pill" shape for the ACTIVE dot specifically */
+.owl-carousel .owl-dot.active {
     width: 35px;
     border-radius: 14px;
-
-}
-.owl-dots.active,
-.owl-dots:hover{
-    background: crimson!important;
 }
 
 /* contact section styling */
@@ -521,6 +528,7 @@ section .title::after{
 .contact .right form .button{
     height: 47px;
     width: 170px;
+    
 }
 .contact .right form .button button{
     width: 100% ;
@@ -672,6 +680,21 @@ footer span a:hover{
         width: 100%;
         margin-left: 0;
     }
+}
+/* Add this to your style.css for accessibility */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+.home .home-content .h3 .typing {
+    color: crimson;
+    font-weight: 500;
 }
 
 }
