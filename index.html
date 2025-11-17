@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Personal Portfolio Website</title>
+        <title>Lusani Magadani Portfolio Web</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
@@ -16,7 +16,7 @@
         </div>
         <nav class="navbar">
             <div class="max-width">
-                <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+                <div class="logo"><a href="#Portfolio">APEX<span>TECH SOL.</span></a></div>
                 <ul class="menu">
                     <li><a href="#home" class="menu-btn">Home</a></li>
                     <li><a href="#about" class="menu-btn">About</a></li>
@@ -30,30 +30,76 @@
                 </div>
             </div>
         </nav>
+                <!-- Sidebar -->
+        <div id="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#teams">Teams</a>
+            <a href="#contact">Contact</a>
+        </div>
+
         <section class="home" id="home">
             <div class="max-width">
                 <div class="home-content">
                     <div class="h1">Hello, my name is</div>
                     <div class="h2">Lusani Magadani</div>
                     <div class="h3">And I'm a <span class="typing"></span></div>
+                    <!-- Include Typed.js -->
+                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                    <script>
+                        // Initialize Typed.js for typing effect
+                        var typed = new Typed(".typing", {
+                            strings: ["Web Developer", "Frontend Developer", "Designer"], // Words to type
+                            typeSpeed: 100,   // Typing speed
+                            backSpeed: 50,    // Backspace speed
+                            loop: true        // Repeat infinitely
+                        });
+                    </script>
                     <a href="#">Hire me</a>
                 </div>
             </div>
         </section>
       <!-- About Section -->
 
-        <section class="about" id="about">
-            <div class="max-width">
-                <h2 class="title">About Me</h2>
-                <div class="about-content">
-                    <div class="column left">
-                        <img src="images/IMG_3345.JPG" alt="Potrait of Lusani Magadani">
-                    </div>
-                    <div class="column right">
-                        <div class="text">I'm Lusani and I'm a <span class="typing-2"></span></div>
-                        <p>I am a passionate web developer specializing in creating responsive, visually appealing, and user-friendly websites...</p>
-                        <a href="Cv.pdf" download>Download CV</a>
-                    </div>
+     <section class="about" id="about">
+    <div class="max-width">
+        <h2 class="title">About Me</h2>
+        <div class="about-content">
+            <!-- Left column for image -->
+            <div class="column left">
+                <img src="images/IMG_3345.JPG" alt="Portrait of Lusani Magadani">
+            </div>
+
+            <!-- Right column for text -->
+            <div class="column right">
+                <div class="text">I'm Lusani and I'm a <span class="typing-2"></span></div>
+                <p>I am a passionate web developer specializing in creating responsive, visually appealing, and user-friendly websites.</p>
+                <br>
+                 <p>Sophisticated second-year ICT student at Cape Peninsula University of Technology, with over 2 years of experience developing websites and applications.</p>
+                 <br>  
+                    Born and raised in Limpopo, I am a highly enthusiastic individual passionate about innovation and creating new, impactful solutions.  
+                    At 22 years old, I specialize in multiple sectors as a Full-Stack Developer, constantly exploring ways to improve and bring ideas to life.</P>
+                <a href="images/MAGADANI CV UPDATED 2025.pdf" download>Download CV</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Include Typed.js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    // Initialize Typed.js for typing effect
+    var typed = new Typed(".typing-2", {
+        strings: ["Web Developer", "Frontend Developer", "Designer"], // Words to type
+        typeSpeed: 100,   // Typing speed
+        backSpeed: 50,    // Backspace speed
+        loop: true        // Repeat infinitely
+    });
+</script>
+
                 </div>
             </div>
         </section>
@@ -94,8 +140,8 @@
                 <h2 class="title">My skills</h2>
                 <div class="skills-content">
                     <div class="column left">
-                        <div class="text">My creative skills & experiences.</div>
-                        <p>I am a creative and detail-oriented ICT professional with strong expertise in HTML, CSS, JavaScript, PHP, and MySQL. My skills allow me to design and develop visually engaging, user-friendly, and fully functional web applications from concept to deployment. With HTML and CSS, I craft clean, structured, and responsive layouts that bring ideas to life across devices. I use JavaScript to enhance interactivity and create smooth, dynamic user experiences. Leveraging PHP, I develop powerful back-end functionalities, ensuring seamless communication between the interface and the database. My knowledge of MySQL enables me to design, manage, and optimize databases for efficiency and scalability. I take pride in blending creativity with technical precision to deliver innovative digital solutions that meet both user needs and business goals.
+                        <div class="text">My Creative Skills & Experiences.</div>
+                        <p>I am a creative and detail-oriented ICT professional with strong expertise in HTML, CSS, JavaScript, PHP, and MySQL. I Design and build visually engaging, user-friendly, and fully functional web applications from concept to deployment. With HTML and CSS, I create clean, responsive layouts that look great across all devices. Using JavaScript, I bring interfaces to life with smooth interactions and dynamic functionality. Through PHP, I develop robust back-end systems that ensure seamless communication between the user interface and the database. My MySQL skills allow me to design, manage, and optimize databases for reliability,efficiency, and scalability. I take pride in blending creativity with technical precision to deliver innovative digital solutions that meet user needs and drive business success.
                         </p>
                         <a href="#">Read more</a>
                     </div>
@@ -139,43 +185,49 @@
                 </div>
             </div>
         </section>
-        <!-- Teams Section -->
-
-            <section class="teams" id="teams">
-                <div class="max-width">
-                    <h2 class="title">My teams</h2>
-                    <div class="carousel owl-carousel">
-                        <div class="card item">
-                            <div class="box">
-                                <img src="images/IMG_3345.JPG" alt="Lusani Magadani">
-                                <div class="text">Lusani Magadani</div>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam eum illo veritatis aliquid ea distinctio cumque deleniti ipsam, natus in doloremque sunt quam aut voluptatem, labore inventore deserunt dolor. Vitae?</p>
-                            </div>
-                        </div>
-                        <div class="card item">
-                            <div class="box">
-                                <img src="images/IMG_3345.JPG" alt="Sithenkosi Mbasa">
-                                <div class="text">Sithenkosi Mbasa</div>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam eum illo veritatis aliquid ea distinctio cumque deleniti ipsam, natus in doloremque sunt quam aut voluptatem, labore inventore deserunt dolor. Vitae?</p>
-                            </div>
-                        </div>
-                        <div class="card item">
-                            <div class="box">
-                                <img src="images/IMG_3345.JPG" alt="Simamkele Makuzeni">
-                                <div class="text">Simamkele Makuzeni</div>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam eum illo veritatis aliquid ea distinctio cumque deleniti ipsam, natus in doloremque sunt quam aut voluptatem, labore inventore deserunt dolor. Vitae?</p>
-                            </div>
-                        </div>
-                        <div class="card item">
-                            <div class="box">
-                                <img src="images/IMG_3345.JPG" alt="Katlego Malope">
-                                <div class="text">Katlego Malope</div>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam eum illo veritatis aliquid ea distinctio cumque deleniti ipsam, natus in doloremque sunt quam aut voluptatem, labore inventore deserunt dolor. Vitae?</p>
-                            </div>
-                        </div>
+       <!-- Teams Section -->
+<section class="teams" id="teams">
+    <div class="max-width">
+        <h2 class="title">Our Team</h2>
+        <div class="carousel owl-carousel"></div>
+            <div class="card item">
+                <div class="box">
+                    <img src="images/IMG_3345.JPG" alt="Lusani Magadani">
+                    <div>
+                        <div class="text">Lusani Magadani</div>
+                        <p>Lead Technical Consultant – Specializing in system architecture, network management, and ICT strategy.</p>
                     </div>
                 </div>
-            </section>
+            </div>
+
+            <div class="card item">
+                <div class="box">
+                    <img src="images/IMG_3345.JPG" alt="Sithenkosi Mbasa">
+                    <div>
+                    <div class="text">Sithenkosi Mbasa</div>
+                    <p>Software Development Lead – Experienced in custom software solutions and application development.</p>
+                </div>
+            </div>
+            <div class="card item">
+                <div class="box">
+                    <img src="images/IMG_3345.JPG" alt="Simamkele Makuzeni">
+                    <div>
+                    <div class="text">Simamkele Makuzeni</div>
+                    <p>Network & Security Specialist – Focused on secure infrastructure, cloud solutions, and cybersecurity.</p>
+                </div>
+            </div>
+            <div class="card item">
+                <div class="box">
+                    <img src="images/IMG_3345.JPG" alt="Katlego Malope">
+                    <div>
+                    <div class="text">Katlego Malope</div>
+                    <p>Client Solutions Manager – Ensures project delivery, client support, and technical guidance.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
         <!-- Contact Section -->
 
         <section class="contact" id="contact">
@@ -184,7 +236,7 @@
                 <div class="contact-content">
                     <div class="column left">
                         <div class="text">Get in Touch</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dolores nemo repudiandae quo? Obcaecati amet quos, vero esse ducimus repellat culpa explicabo inventore maiores officia provident adipisci harum soluta eveniet!</p>
+                        <p>“APEX Technical Solutions delivers reliable and innovative ICT services for businesses of all sizes. Contact us today to discuss your project or technical requirements – we’re here to ensure your technology works for you.”</p>
                         <div class="icons">
                             <div class="row">
                                 <i class="fas fa-user"></i>
@@ -204,7 +256,7 @@
                                 <i class="fas fa-envelope"></i>
                                 <div class="info">
                                     <div class="head">Email</div>
-                                    <div class="sub-title">magadanilusani2003@gmail.com</div>
+                                    <div class="sub-title">apexinvestment03@gmail.com</div>
                                 </div>
                             </div>
                         </div>
@@ -232,19 +284,75 @@
                 </form>
             </div>
         </section>
-        <!-- footer section -->
+    <!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <!-- Company Info -->
+        <div class="footer-section about-company">
+            <h3>Apex Technical Solution</h3>
+            <p>
+                Apex Technical Solution is a leading ICT company specializing in web development, software solutions, and innovative technology services. 
+                Based in South Africa, we strive to deliver cutting-edge solutions to businesses and individuals alike.
+            </p>
+            <p><strong>Email:</strong> apexinvestment03@gmail.com</p>
+            <p><strong>Phone:</strong> +27 68 195 4265</p>
+            <p><strong>Address:</strong> Cape Town, Gauteng, Limpopo, South Africa</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/271234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.tiktok.com/@yourprofile" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://youtube.com/yourchannel" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p>© 2025 Apex Technical Solution. All Rights Reserved.</p>
+    </div>
+</footer>
 
 
-    <footer>
-    <a href="https://facebook.com/yourprofile" target="_blank">
-    <i class="fab fa-facebook"></i> Facebook</a>
-    <span>Created By <a href="#">Apex Technical Solution</a> | <span class="fas fa-copyright"></span> 2025 All rights reserved</span>
-    </footer>
+
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+<!--Sidebar -->
+    <script>
+    const menuBtn = document.querySelector('.navbar .menu-btn i');
+    menuBtn.addEventListener('click', openSidebar);
+
+    function openSidebar() {
+        document.getElementById("sidebar").style.width = "250px";
+    }
+
+    function closeSidebar() {
+        document.getElementById("sidebar").style.width = "0";
+    }
+</script>
+
+
 
     <script src="script.js"></script>
 
