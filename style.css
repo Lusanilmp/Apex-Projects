@@ -254,8 +254,13 @@ section .title::after{
 .about .about-content .left img{
     height: 400px;
     width: 400px;
+
+    object-fit: cover;
+    font-weight: 500;
+
     object-fit: contain;
     border-radius:  7px;
+
 }
 .about .about-content .right{
     width: 55%;
@@ -289,6 +294,20 @@ section .title::after{
 }
 
 /* services section styling */
+
+ .services .teams{
+   color: #fff;
+   background: #111;
+}
+.services .title::before,
+.teams .title::before{
+  background: #fff;
+}
+
+.about .about-content .right a{
+    
+}
+
 .services, .teams{
     color: #fff;
     background: #111;
@@ -299,6 +318,7 @@ section .title::after{
 }
 .services .title::after,
 .teams .title::after{
+
     background: #111;
     content: "what i provide";
 }
