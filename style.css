@@ -303,11 +303,6 @@ section .title::after{
 .teams .title::before{
   background: #fff;
 }
-
-.about .about-content .right a{
-    
-}
-
 .services, .teams{
     color: #fff;
     background: #111;
